@@ -1,74 +1,130 @@
-theme = "hugo-assembly"
-baseURL = "https://example.co"
-languageCode = "en-US"
-title = "Assembly"
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Meghna | Responsive Multipurpose Parallax HTML5 Template"
+theme = "meghna-hugo"
 
-# Metadata
+# Menu
+[menu]
+    [[menu.nav]]
+    name = "About Us"
+    URL = "about"
+    weight = 2
+
+    [[menu.nav]]
+    name = "Service"
+    URL = "services"
+    weight = 3
+
+    [[menu.nav]]
+    name = "Portfolio"
+    URL = "portfolio"
+    weight = 4
+
+    [[menu.nav]]
+    name = "Team"
+    URL = "our-team"
+    weight = 5
+
+    [[menu.nav]]
+    name = "Pricing"
+    URL = "pricing"
+    weight = 6
+
+    [[menu.nav]]
+    name = "Blog"
+    URL = "blog"
+    weight = 7
+
+    [[menu.nav]]
+    name = "Contact"
+    URL = "contact-us"
+    weight = 8
+
+# Site params
 [params]
-  author = "A Human Name"
-  description = "The description"
+home= "Home"
+logo = "images/logo.png"
+gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+# Meta data
+description = "Airspace Hugo theme"
+author = "Themefisher"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+custom_css = ["css/custom.css"]
 
-# banner section (from here on is for assembly theme)
-[params.banner]
-  title = "This is Assembly Template"
-  byline = "A free, CSS template ported over to a Hugo Theme."
+    # Banner Section
+    [params.banner]
+    enable = true
+    bgImage = "images/slider/hero-area.jpg"
+    icon = "tf-ion-play"
+    heading = "Experience the new reality"
+    content= "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, excepturi. At recusandae sit perferendis autem,iste tempora nostrum numquam sapiente!"
+    btn = true
+    btnText="Explore Us"
+    btnURL="#services"
 
-[params.actions] # CTAs
-  enable = true
-  register = "CTA Now!"
+    # call to action
+    [params.cta]
+    enable = true
+    title = "Great Design & Incredible Features"
+    content = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tenetur odio impedit incidunt? Omnis accusantium ea reiciendis, fugit commodi nostrum."
+    btnURL = "#"
+    btnText = "Start a project with us"
 
-# Navigation section
-[params.nav]
-  home = "Home"
-  services = "Services"
-  welcome = "Welcome"
-  contact = "Contact Us"
+    # counter
+    [params.counter]
+    enable = true
+    bgImage = "images/backgrounds/bg-1.jpg"
+        [[params.counter.counterItem]]
+        title = "Happy Clients"
+        icon = "tf-ion-android-happy"
+        count = "320"
 
-# Services section
-[params.services]
-  enable = true
-  title = "Services"
-  subtitle = "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        [[params.counter.counterItem]]
+        title = "Projects completed"
+        icon = "tf-ion-archive"
+        count = "565"
 
-  [[params.services.item]]
-    weight = "A"
-    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    button_item_info = "Safer"
+        [[params.counter.counterItem]]
+        title = "Positive feedback"
+        icon = "tf-ion-thumbsup"
+        count = "95"
 
-  [[params.services.item]]
-    weight = "B"
-    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    button_item_info = "Faster"
+        [[params.counter.counterItem]]
+        title = "Cups of Coffee"
+        icon = "tf-ion-coffee"
+        count = "2500"
+    
+    # footer
+    [params.footer]
+        copyright = "Themefisher Team"
+        copyrightURL = "http://www.themefisher.com"
 
-  [[params.services.item]]
-    weight = "C"
-    description = "Possimus id dicta consequuntur veritatis, reiciendis at sint distinctio eligend Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    button_item_info = "Smarter"
-
-# Welcome section
-[params.welcome]
-  enable = true
-  title = "Welcome Assembly"
-  subtitle = "Computing the conversion of instructions in low-level code to machine code by an assembler."
-  description = "This is <strong>Assembly</strong>, a free, fully standards-compliant CSS template designed by <a href=\"http://templated.co\" rel=\"nofollow\">TEMPLATED</a>. The photos in this template are from <a href=\"http://fotogrph.com/\"> Fotogrph</a>. This free template is released under the <a href=\"http://templated.co/license\">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :)"
-  button_text = "Call Now"
-
-# Contact section
-[params.contact]
-  enable = true
-#   title = "Get In Touch"
-#   message = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-#   name_placeholder = "Your name"
-#   email_placeholder = "Your email"
-#   email_disclaimer = "We'll never share your email with anyone else."
-#   message_placeholder = "Please enter a message."
-#   button_text = "Submit"
-
-# Footer section
-[params.footer]
-  enable = true
-  copy = "2018 &copy; Assembly Inc. | All rights reserved"
-  twitter = ""
-  facebook = ""
-  instagram = ""
-
+        # social Icons
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-facebook"
+        url = "#"
+        
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-twitter"
+        url = "#"
+        
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-google-outline"
+        url = "#"
+        
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-youtube"
+        url = "#"
+        
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-linkedin"
+        url = "#"
+        
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-dribbble-outline"
+        url = "#"
+        
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-pinterest-outline"
+        url = "#"
