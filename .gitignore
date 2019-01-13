@@ -1,6 +1,9 @@
 # Hugo default output directory
 /public
 
+# Hugo auto generated output
+/resources/_gen
+
 # OS Files
 Thumbs.db
 ehthumbs.db
