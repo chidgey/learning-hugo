@@ -6,3 +6,4 @@ HUGO_VERSION = "0.53"
     [headers.values]
     X-FRAME-OPTIONS = "DENY"
     X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options: nosniff
